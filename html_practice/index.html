@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" src="css/styles.css" type="text/css">
+      <title>little lemon</title>
+   </head>
+   <style>
+      .w3-helper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      }
+      .w3-helper div{
+        width: 20%;
+      }
+   </style>
+   <body style="background-color: aquamarine; text-align : center; width: 100%; height: auto;">
+      <div>
+      <h1>Book the table</h1>
+      <form action="test.html" method="POST"  >
+        <div class="w3-helper">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+             </div>
+             <div>
+                <label for="date">Select the date: <input type="date" id="date" value="date"></label><br><br>
+             </div>
+             <div>
+                <label for="size">Select the table size: <input type="range" id="size" value="size" min="1" max="10"
+                   oninput="this.nextElementSibling.value=this.value">
+                <output>4</output></label><br><br>
+             </div>
+             <div>
+                <label for="location">Select the location:</label>
+                <input id="booking_location" name="booking_location" list="location">
+                <datalist id="location">
+                   <select name="location_list" id="location" 
+                   <option value="Down town"></option>
+                   <option value="Up town"></option>
+                   </select>
+                </datalist>
+             </div>
+             <br><br>
+             <div>
+                <label for="rating">Rating</label>
+                <input type="range" min="1" max="5" id="rating" name="rating" list="ratings">
+                <datalist id="ratings">
+                   <option value="1" label="1"></option>
+                   <option value="2"></option>
+                   <option value="3"></option>
+                   <option value="4"></option>
+                   <option value="5" label="5"></option>
+                </datalist>
+                <textarea readonly>Initial Text</textarea>
+                <br><br>
+                </div>
+        </div>
+            <input type="submit" value="Book Now">
+      </form>
+      </div>
+      <div><br><iframe src="about:blank" name="My frame" frameborder="10" height="200" width="400"></iframe></div>
+      <div><iframe srcdoc="<p>HELLO</p>" frameborder="10" height="200" width="400"></iframe></div>
+   </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav_bar.css">
+   
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Servies</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- <div class="flex_container">
+        <div class="box box1">One....</div>
+        <div class="box box2">Two....</div>
+        <div class="box box3">Three...</div>
+        <div class="box box4">Four....</div>
+        <div class="box box5">Five....</div>
+        <div class="box box6">Six.....</div>
+        <div class="box box7">Seven...</div>
+    </div> -->
+<!--</body>
+</html> -->
